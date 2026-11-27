@@ -29,16 +29,28 @@ release branch code will be pulled into main on publication
         compose-pod.yaml podman specific compose file
         shell-dock.sh docker specific script to open interactive session
         shell-pod.sh podman specific scrpt to open interactive session
-        /setup-db
-        /startup-db    
+          /setup
+               /base
+          /startup 
+               /base
+  
      /practical-[topic-area]
+          /setup
+               /[topic-area]
+          /startup
+               /[topic-area]
 
 /scripts
      /base
           /setup
+               /base
           /startup
-     /topics-[topic-area]
+               /base
+
+     /[topic-area]
           /setup
+               /[topic-area]
+                    /cleanup
           /startup
+               /[topic-area]
           /tests
-          /teardown
